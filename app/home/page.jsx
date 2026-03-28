@@ -35,7 +35,7 @@ export default function Home() {
           </div>
 
           <div>
-            <Link href="/projetos">
+            <Link href="/contato">
               <motion.button  
                 whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
                 whileTap={{ scale: 0.95 }}
@@ -58,7 +58,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* --- CONTEÚDO PRINCIPAL --- */}
       <section className="w-full py-20 flex items-center justify-center">
         <div className="max-w-screen-xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 p-10 items-center">
           <div className="order-2 md:order-1">
