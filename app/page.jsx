@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const ProjectCard = ({ category, title, description, imgSrc, link, bg }) => (
   <section className={`w-full flex items-center justify-center py-10 ${bg}`}>
-    <div className="max-w-screen-xl w-full px-10">
+    <motion.div whileHover={{scale: 1.05}} whileTap={{scale: 0.95}} className="max-w-screen-xl w-full px-10">
       <div className="mx-auto max-w-5xl bg-slate-800/50 p-12 rounded-3xl border border-slate-700 shadow-2xl">
         <div className="flex items-center gap-8">
           <img 
@@ -30,7 +30,7 @@ const ProjectCard = ({ category, title, description, imgSrc, link, bg }) => (
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   </section>
 );
 
@@ -45,7 +45,7 @@ export default function Home() {
               <br /><br />
               Busco minha primeira oportunidade para aplicar esses fundamentos em projetos reais e evoluir na trilha de engenharia de software.
             </p>
-            <motion.button
+            <motion.button id="contato"
               whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
               whileTap={{ scale: 0.95 }}
               className="mt-5 px-8 py-2 bg-blue-500 text-white font-bold rounded-2xl shadow-lg"
@@ -84,6 +84,22 @@ export default function Home() {
         bg="bg-slate-900"
         description="Aplicativo focado na verificação de informações e combate a notícias falsas. Desenvolvido com Next.js e Tailwind CSS, o projeto utiliza uma interface moderna e responsiva para garantir que o usuário tenha acesso a dados confiáveis de forma rápida e eficiente."
       />
+
+      <footer className="bg-amber-50" href="contato">
+        <div className="flex flex-col grid grid-cols-3 items-center justify-center text-center">
+          <div>
+            <h1>LinkdIn</h1>
+          </div>
+
+          <div>
+            <h1>Instagram</h1>
+          </div>
+
+          <div>
+            <h1>GitHub</h1>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
