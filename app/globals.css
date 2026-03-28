@@ -1,14 +1,17 @@
-
-
 @import "tailwindcss";
 
 @theme {
-  /* Aqui você "ensina" ao Tailwind v4 as suas fontes */
   --font-display: var(--font-archivo);
   --font-sans: var(--font-inter);
 }
 
-/* Opcional: define a fonte padrão do corpo do site */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: var(--font-inter);
+  display: flex;
+  flex-direction: column;
 }

@@ -38,42 +38,6 @@ const ProjectCard = ({ category, title, description, imgSrc, link, bg }) => (
 export default function Projetos(){
     return (
         <main className="bg-white w-full">
-            <footer className="w-full h-18 bg-slate-800 backdrop-blur-sm sticky top-0 z-50 items-center justify-center text-center shadow-md border-b drop-shadow-2xl">
-              <div className="h-full grid grid-cols-3">
-                <div>
-                  <Link href="/home">
-                    <motion.button  
-                      whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
-                      whileTap={{ scale: 0.95 }}
-                      className="mt-5 px-8 py-2 bg-blue-500 text-white font-bold rounded-2xl shadow-lg">
-                      Perfil
-                    </motion.button>
-                  </Link>  
-                </div>
-
-                <div>
-                  <Link href="/contato">
-                    <motion.button  
-                      whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
-                      whileTap={{ scale: 0.95 }}
-                      className="mt-5 px-8 py-2 bg-blue-500 text-white font-bold rounded-2xl shadow-lg">
-                      Contato
-                    </motion.button>
-                  </Link>  
-                </div>
-
-                <div>
-                  <Link href="/projetos">
-                    <motion.button  
-                      whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
-                      whileTap={{ scale: 0.95 }}
-                      className="mt-5 px-8 py-2 bg-blue-500 text-white font-bold rounded-2xl shadow-lg">
-                      Tecnologias
-                    </motion.button>
-                  </Link>  
-                </div>
-              </div>
-            </footer>
             
             <ProjectCard 
                 category="Saúde"

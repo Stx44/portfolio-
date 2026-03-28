@@ -33,43 +33,6 @@ export default function Contato() {
                 </video>
             </div>
 
-            <footer className="w-full h-18 bg-white/90 backdrop-blur-sm sticky top-0 z-50 items-center justify-center text-center shadow-md border-b border-gray-100">
-                <div className="h-full grid grid-cols-3">
-                    <div>
-                        <Link href="/projetos">
-                        <motion.button  
-                            whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
-                            whileTap={{ scale: 0.95 }}
-                            className="mt-5 px-8 py-2 bg-blue-500 text-white font-bold rounded-2xl shadow-lg">
-                            Projetos
-                        </motion.button>
-                        </Link>  
-                    </div>
-
-                    <div>
-                        <Link href="/contato">
-                        <motion.button  
-                            whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
-                            whileTap={{ scale: 0.95 }}
-                            className="mt-5 px-8 py-2 bg-blue-500 text-white font-bold rounded-2xl shadow-lg">
-                            Contato
-                        </motion.button>
-                        </Link>  
-                    </div>
-
-                    <div>
-                        <Link href="/projetos">
-                        <motion.button  
-                            whileHover={{ scale: 1.05, backgroundColor: "#1d4ed8" }}
-                            whileTap={{ scale: 0.95 }}
-                            className="mt-5 px-8 py-2 bg-blue-500 text-white font-bold rounded-2xl shadow-lg">
-                            Tecnologias
-                        </motion.button>
-                        </Link>  
-                    </div>
-                </div>
-            </footer>
-
             <section className="flex-grow w-full flex flex-col items-center justify-center py-12">
                 <motion.h2 
                     initial={{ opacity: 0, y: -20 }}
