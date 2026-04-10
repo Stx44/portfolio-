@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Link from 'next/link'
 
 const ProjectCard = ({ category, title, description, imgSrc, link, bg }) => (
-  <section className={`w-full flex items-center justify-center py-10 ${bg}`}>
+  <section className={`w-full flex items-center justify-center py-10 `}>
     <div className="max-w-screen-xl w-full px-10">
-      <div className="mx-auto max-w-5xl bg-slate-800/50 p-12 rounded-3xl border border-slate-700 shadow-2xl">
+      <div className="mx-auto max-w-5xl bg-white p-12 rounded-3xl border border-slate-300 drop-shadow-2xl ">
         <div className="flex items-center gap-8">
           <img 
             className="hidden md:block w-1/3 mask-radial-[100%_100%] mask-radial-from-75% mask-radial-at-left object-contain" 
@@ -14,9 +14,9 @@ const ProjectCard = ({ category, title, description, imgSrc, link, bg }) => (
             alt={title} 
           />
           <div className="font-medium">
-            <p className="font-mono text-xs text-blue-500 uppercase tracking-widest">{category}</p>
-            <h2 className="mt-2 text-2xl font-bold text-white">{title}</h2>
-            <p className="mt-2 text-base leading-relaxed text-gray-300 text-balance">
+            <p className="font-mono text-xs text-black uppercase tracking-widest">{category}</p>
+            <h2 className="mt-2 text-2xl font-bold text-black">{title}</h2>
+            <p className="mt-2 text-base leading-relaxed text-black-300 text-balance">
               {description}
             </p>
             <a href={link} target="_blank" rel="noopener noreferrer">
